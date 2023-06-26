@@ -1,22 +1,20 @@
 # Why giving talks at Postgres conferences matters
 
-**Pino:** Welcome everyone. We're here to talk about why giving talks at Postgres conferences matters. This is Path to Scon, episode three. Our producers are Carol Smith and Erin wlan. I'm Pino DeCandia. And I'm Claire Giana. If you're attending live, we would like to remind you that you can join our text chat in the Ciis Con channel under the path to Ciis Con E zero three, thread in Discord.
+**Pino:** Welcome everyone. We're here to talk about why giving talks at Postgres conferences matters. This is Path to Citus Con, episode three. Our producers are Carol Smith and Erin wlan. I'm Pino De Candia. And I'm Claire Giordano. If you're attending live, we would like to remind you that you can join our text chat in the Citus Con channel under the "Path to Citus Con E03" thread in Discord.
 
-Okay, so I'm, let's introduce our two guests. I'm honored to introduce Alvaro Herra. Alvaro has been a Postgres Committer since 2002 and works at E DB formerly second quadrant. Alfredo is a promoter of free and open source software in Chile in general, and he was the organizer of P G A Chile in 2019.
+Okay, so I'm, let's introduce our two guests. I'm honored to introduce Álvaro Hererra. Álvaro has been a Postgres Committer since 2002 and works at EDB, formerly 2ndQuadrant. Álvaro is a promoter of free and open source software in Chile in general, and he was the organizer of PGDay Chile in 2019.
 
-Hi, Alro. 
+Hi, Álvaro.
 
-**Alvaro:** Hello. I'm honored to be here. 
+**Álvaro:** Hello. I'm honored to be here. 
 
-**Pino:** Well, really glad to have 
+**Pino:** Well, really glad to have you.
 
-**Claire:** you. And before we go too far into jumping into a discussion, I also wanna introduce Bo. Hi. Who is a senior solution architect at edb. He volunteers and organizes conferences in Europe and coordinates the Postgres user group in Belgium. More recently, Boris was a speaker at Scon, an event for Postgres, which happened just a couple of weeks ago now.
+**Claire:**  And before we go too far into jumping into a discussion, I also want to introduce Boriss Mejías, who is a senior solution architect at EDB. He volunteers and organizes conferences in Europe, and coordinates the Postgres user group in Belgium. More recently, Boriss was a speaker at Citus Con, an event for Postgres, which happened just a couple of weeks ago now and his talk was called "Postgres Storytelling Support in the Darkest Hour", which I highly recommend people watch. Obviously I'm a big fan of many of the talks that the incredible cast of speakers gave at Citus Con, but there was something very unique about Boriss's storytelling talk and I think it's a super interesting way to teach people, and I hope we unpack it a little bit and explore how that came about.
 
-And his talk was called Postgres, storytelling Support in the Darkest Hour, which I highly recommend people watch. Obviously I'm a big fan of many of the talks that the incredible cast of speakers gave at Satcon. But there was something very unique about Bois's storytelling talk. And I think it's a super interesting way to teach people and I hope we, we unpack it a little bit and explore how that came about.
+Welcome, Boriss.
 
-Welcome, 
-
-**Boriss:** Boris. Thank you very much, Claire, and thanks for the invitation. Super happy to be here, especially sharing with Alvaro. Once at this stages we, we've been friends for. For a very long time and things last century actually. And super happy to, to be with him. 
+**Boriss:** Thank you very much, Claire, and thanks for the invitation. Super happy to be here, especially sharing with Álvaro. Once at this stages we, we've been friends for a very long time, I think last century actually and super happy to be with him. 
 
 **Claire:** Yeah. Well, the, the two of you went, the two of you went to grad school together, right?
 
@@ -30,7 +28,7 @@ Yes. In Chile?
 
 2001 was this, and then he needed a, a front-end developer, so he contacted me and then we started to work together. So that was my first project with the Postgres as well. And actually it's, it's, it's good to see, because we were discussing a few weeks ago that one of the founders of that company at the time, there were like four people only.
 
-He was like celebrating like 22 years in the company. So we said, oh, wow. It's been a long time since, since that project that we did together at that time. Yeah. Yeah. I wanna continue working with Postgres immediately after that. So I, I decided to go in a different path. I went to academia and did some research, but also related to, to databases anyway, so.
+He was like celebrating like 22 years in the company. So we said, oh, wow. It's been a long time since, since that project that we did together at that time. Yeah. Yeah. I want to continue working with Postgres immediately after that. So I, I decided to go in a different path. I went to academia and did some research, but also related to, to databases anyway, so.
 
 **Claire:** Okay. And then eventually you came back to 
 
@@ -40,7 +38,7 @@ And, and then, and then I started to work again with Postgres. Yep.
 
 **Claire:** So before we dive into the high level question that we're here to talk about today, which is why giving talks at Postgres Conferences matters, or frankly, you could insert any Open Source conference, open source developer conference there.
 
-I actually do wanna unpack your site con talk for just a second. Postgres storytelling support in the, the Darkest Hour. And I, I'm curious, Al Alvar, did you get a chance to watch that yet? I know the recording is available as part of the live stream, but it hasn't been published yet. Not till next Monday as an individual talks, so maybe you have not yet seen it.
+I actually do want to unpack your site con talk for just a second. Postgres storytelling support in the, the Darkest Hour. And I, I'm curious, Al Alvar, did you get a chance to watch that yet? I know the recording is available as part of the live stream, but it hasn't been published yet. Not till next Monday as an individual talks, so maybe you have not yet seen it.
 
 I have not. I'm sorry. Okay. But other, so I have, oh, go ahead. Yeah, 
 
@@ -90,7 +88,7 @@ She's super cool. So I really, I really like, I mean, I, I'm, I'm lucky to, to w
 
 Because your voice and the words you choose and even the, the pauses in your story can entrench people. But having that, those magical illustrations by Scarlet Riggs really added like a whole nother level. And I mean, there's no reason learning can't be fun, and you made it, I think, more fun. So I appreciated it.
 
-Oh, thanks. All right. And then I just wanna shout out the book that you mentioned, A Curious Moon. Hopefully I, I can drop a link in later and maybe Aaron can now. I think that Rob Connery is the author of that and he is not on my direct team here at Microsoft, but he does, he does work in the cloud dev, dev advocacy group here at Microsoft, and I'm a big fan of that book as well.
+Oh, thanks. All right. And then I just want to shout out the book that you mentioned, A Curious Moon. Hopefully I, I can drop a link in later and maybe Aaron can now. I think that Rob Connery is the author of that and he is not on my direct team here at Microsoft, but he does, he does work in the cloud dev, dev advocacy group here at Microsoft, and I'm a big fan of that book as well.
 
 It's pretty awesome. Okay, I agree. So we're here to talk about why giving talks at Postgres conferences matters. A Aldo, why don't, why don't we start with you? I would love to kind of hear your, your high level answer to that question. 
 
@@ -132,7 +130,7 @@ And that was a complete failure. But I do not think about what I am getting from
 
 **Claire:** So I think that's a really good point that, that learning of focusing on the audience and what they need and where they're coming from and having empathy for you know, the fact that they're probably not as expert as you or don't know what you know is, is super important.
 
-And oh, you've, you've said so many things. I mean, there's also the notion of failure. Every good conference speaker has a couple of failed conference presentations in their background, right? Like you, it's just absolutely naturally you gotta be willing to fail. Okay, so we've got a bunch of things we need to circle back on that a veto has touched on here, but I wanna.
+And oh, you've, you've said so many things. I mean, there's also the notion of failure. Every good conference speaker has a couple of failed conference presentations in their background, right? Like you, it's just absolutely naturally you gotta be willing to fail. Okay, so we've got a bunch of things we need to circle back on that a veto has touched on here, but I want to.
 
 Cut over to Boice for a second and ask you the high level question. Why do you think giving talks at Postgres conferences matters or frankly, any open source developer conference? Why, why spend the time? 
 
@@ -140,7 +138,7 @@ Cut over to Boice for a second and ask you the high level question. Why do you t
 
 So that's why Alvarez was mentioning his limited time with the family because he has done the extra time apart from all the job that he, he does. And then it's not my, my description of work either. I think we need to do a little bit of a. Advocating, but it's not real. Like you have to give up that many talks per year.
 
-No, we, we do as many as, as we can, and it is important in the sense that, for instance, Alvaro, the fact that he's a core developer, it gives the community the sense that the core developers are close to the people that are using the software. It's not just about we release the software that we are developing in our, in our home, and, and then you use it or you, you will, no, Alberta does it because he wants to hear how people is using the software.
+No, we, we do as many as, as we can, and it is important in the sense that, for instance, Álvaro, the fact that he's a core developer, it gives the community the sense that the core developers are close to the people that are using the software. It's not just about we release the software that we are developing in our, in our home, and, and then you use it or you, you will, no, Alberta does it because he wants to hear how people is using the software.
 
 And, and, and I think that's super important because, I mean, for many other software that we use, we never know who is developing that stuff. And the fact that you go to Postgres conferences and you meet the core developers, if you go to Foster Themm, you meet plenty of core developers. It's super nice. So that's, that's a, that's very important that in conferences you can meet the, the real workers of the, of the software itself, so it builds the community.
 
@@ -156,7 +154,7 @@ Like, I mean, they talk about table partitioning. I think I've given it like thr
 
 **Claire:** yeah. I, I actually do the same thing.
 
-I will give the same talk again, but I improve it each time. I try to incorporate the feedback I got from the previous version. And I don't know Alvaro if you disagree, but you know, some of the smaller Postgres conferences, like a lot of the p pg days, for example, they don't videotape or record the conference, so it's only valuable to the 200 people who were in the room.
+I will give the same talk again, but I improve it each time. I try to incorporate the feedback I got from the previous version. And I don't know Álvaro if you disagree, but you know, some of the smaller Postgres conferences, like a lot of the p pg days, for example, they don't videotape or record the conference, so it's only valuable to the 200 people who were in the room.
 
 And so I find giving it again, makes that knowledge more accessible to more people. It basically shares it more broadly. Now, if it's been videotaped and it's a high quality video recording, then you could argue it would make more sense for me to create a new talk. And so sometimes I do. Yeah, 
 
@@ -248,7 +246,7 @@ But my current professional work with Postgres at EDB seems to relate more to fi
 
 **Pino:** expansions. 
 
-**Claire:** I feel like you can go either way. I, I, I, when I try to have empathy for people in the audience, obviously they wanna know and understand how to use the new things, the new features.
+**Claire:** I feel like you can go either way. I, I, I, when I try to have empathy for people in the audience, obviously they want to know and understand how to use the new things, the new features.
 
 So that's obvious, like content for future conference talks. But there are also pain points or things that are complicated that maybe they don't fully understand yet. And that also gives fodder and that, that goes back to what Bodice was saying a few minutes ago about, you know, listening to whether it's users or people in customer support.
 
@@ -264,7 +262,7 @@ Yeah. Yeah, exactly. And, and I gave, for instance, a talk in, which is the othe
 
 So again, I tried to build up a use case and within the use case I was answering the questions and of course talking about metal music which is one of my favorite topics. So it's, I tried to mix Jason sounds like really metal stuff. I sounds like a killer character in a movie or hears. Come Jason.
 
-**Claire:** I know that one of my teammates gave a talk at pg Comfy u about going back to what Alvaro was saying about how to become a Postgres hacker, and it was him sharing his story about the first six months of becoming a Postgres hacker. And, and then he gave that talk again at PG Day Paris a few months later.
+**Claire:** I know that one of my teammates gave a talk at pg Comfy u about going back to what Álvaro was saying about how to become a Postgres hacker, and it was him sharing his story about the first six months of becoming a Postgres hacker. And, and then he gave that talk again at PG Day Paris a few months later.
 
 So and that's kind of another category of like, not quite today I learned, but you know, what I learned as I was doing X for the first time. And I think people always appreciate those as well, right? Because a lot of people, whether they're expert or beginners, have empathy for those kind of, you know, first experiences and sharing their observations.
 
@@ -330,7 +328,7 @@ particular?
 
 So I was making, so somebody asked me this before and said, okay, there are plenty of names that are very good. And I said, well, if I have the top 10 speakers in a conference and they're all presenting at the same time, which one will be the one that I don't want to miss? And that for me is Thomas vra.
 
-He is such a good speaker because he's so, is the same level of knowledge as Alvaro, and, and he adds a little bit of more jokes. And this is what I, what I really like because his jokes are so dry that he, he comes up with, with this kind of things like make you think a lot with with his presentations.
+He is such a good speaker because he's so, is the same level of knowledge as Álvaro, and, and he adds a little bit of more jokes. And this is what I, what I really like because his jokes are so dry that he, he comes up with, with this kind of things like make you think a lot with with his presentations.
 
 Every time that I see one of his talks, he's like, well, I need to, I need to check this stuff when I get back home and I need to see these slides again and then try all this stuff. And, and he doesn't. Overdo it in terms of trying to be funny. No, he, he just is Thomas presenting and then he's, he's super dry and, and, and I really enjoy watching him.
 
@@ -338,7 +336,7 @@ It's that's, that's this speaker that I never want to miss. If he's in a lineup 
 
 **Pino:** Yeah. And I guess humor is an important part. I mean, not, not all speakers Absolutely.
 
-Try to get humor in, in their presentation. Yeah. And Boris 
+Try to get humor in, in their presentation. Yeah. And Boriss
 
 **Boriss:** has a very, very good sense of humor, and that absolutely leads to the audience being very engaged with the, with the topic of the dog, whatever 
 
@@ -384,11 +382,11 @@ But I think the knowledge that Oliver has is also authority. I mean, everybody k
 
 Right. And then it's like, okay, 
 
-**Claire:** it's important. Yeah. That it's for speakers to know that it's okay not to know. And it's really important to say, I don't know. Right. I mean, that, that gives you authority. I actually wanna shine a light on something that Alvaro just said, which is using interesting things in your examples.
+**Claire:** it's important. Yeah. That it's for speakers to know that it's okay not to know. And it's really important to say, I don't know. Right. I mean, that, that gives you authority. I actually want to shine a light on something that Álvaro just said, which is using interesting things in your examples.
 
 I don't know if any of you remember the talk that Louise gave at PG Con, probably back in Milan. So what is that? Pre covid? And she might have given a similar talk at a Django Con conference. And she used like pop music stars in her data model and in her examples. And it made it just so much more interesting than if it was F and bar, which as you said, are meaningless.
 
-So I do think that's a way. To connect, to have those examples that kind of catch your attention. Another way to connect is just, I don't know, do you do this, Alvaro, do you ever ask your audience questions like, as part of the talk, like pause and stop and make it less of a lecture and more of a conversation, or even just ask, show of hands how many people have done X, y, Z with this news feature?
+So I do think that's a way. To connect, to have those examples that kind of catch your attention. Another way to connect is just, I don't know, do you do this, Álvaro, do you ever ask your audience questions like, as part of the talk, like pause and stop and make it less of a lecture and more of a conversation, or even just ask, show of hands how many people have done X, y, Z with this news feature?
 
 Yeah. Is that, is that a 
 
@@ -400,7 +398,7 @@ And like, as soon as you can't follow the speaker, as soon as you're lost. Your 
 
 **Pino:** since we're talking, oh, I'm sorry, Claire didn't mean to cut you off.
 
-No, you didn't. Go, go, go. Since, since we're on the topic of sort of how presenter's personality comes into play, I wanted to ask are you an introvert or extrovert and how does that affect how you prepare and how you give talks? Maybe Alvaro, could 
+No, you didn't. Go, go, go. Since, since we're on the topic of sort of how presenter's personality comes into play, I wanted to ask are you an introvert or extrovert and how does that affect how you prepare and how you give talks? Maybe Álvaro, could 
 
 you 
 
@@ -428,7 +426,7 @@ It's like, ah, I want to give more talks because I, I'm, I'm helping the communi
 
 We were walking to the, to the room, to the posts room and somebody asked us, Hey, you guys know where is the post room? We gave them direction and then the guy look at me and say like, what are you giving a talk about Jason on, on YouTube? I said, well, yeah, yeah, could be me. Said, oh, yeah, yeah, it was you.
 
-And then thanks to you. Now I, I use Jason also posters. Oh wow. That's super cool. So it kind of convinced me like, okay, I'm doing the right thing. And also I foster them. Somebody came to me and said like, ah, Boris your talk about table partitioning in Berlin, I used your slides to give the same talk to my colleagues in, in a couple.
+And then thanks to you. Now I, I use Jason also posters. Oh wow. That's super cool. So it kind of convinced me like, okay, I'm doing the right thing. And also I foster them. Somebody came to me and said like, ah, Boriss your talk about table partitioning in Berlin, I used your slides to give the same talk to my colleagues in, in a couple.
 
 I don't remember. It was a customer. So that's like a, kind of like making a song and somebody makes a cover of your song. Yeah. Cause they just pick up the slides. So that's, that's kind of a very huge compliment because my slides, they don't even have bullet points, so they're not very easy to just pick them up and reuse them.
 
@@ -452,9 +450,9 @@ We've gotta pay the bills and cook the food and take care of family and, you kno
 
 I don't think I, I say thank you or I tell people, Hey, you did this thing and it helped me. And so, I don't know. I think we should all give each other feedback more, both positive and the constructive negative feedback too. That's my philosophy for the day. Yeah, 
 
-**Boriss:** I, I agree. And given that Phil philosophy, I will publicly acknowledge then Alvaro, because of because of him, I'm, I'm into open source and free software.
+**Boriss:** I, I agree. And given that Phil philosophy, I will publicly acknowledge then Álvaro, because of because of him, I'm, I'm into open source and free software.
 
-I'm working with him in the beginning of my career in it was very, very important. So thank you, Alvaro, for all your knowledge. Transfer to me had my pleasure and always good time. Yeah. It's been, it's been a, a very nice long ride. Yeah, 
+I'm working with him in the beginning of my career in it was very, very important. So thank you, Álvaro, for all your knowledge. Transfer to me had my pleasure and always good time. Yeah. It's been, it's been a, a very nice long ride. Yeah, 
 
 **Claire:** I remember being at Fadim, and I don't think it was 2020 right before Covid hit the year I gave up my first talk at Fadim, I think it was the year before 2019.
 
@@ -474,7 +472,7 @@ And so you know, we all, we all owe Aden. Thanks for that because you know, it's
 
 **Pino:** given me.
 
-I thought with a question, is it, is it too late for me to open up a quick, it could be quick. Yeah, go for it. I can run a few minutes open. I was, how, I was just reflecting on how, how nice it is to hear you all who have been in the Postgres community longer and you remember talks from different people like going, going way back and you've worked together in your case Alvaro and Boris for a very long time.
+I thought with a question, is it, is it too late for me to open up a quick, it could be quick. Yeah, go for it. I can run a few minutes open. I was, how, I was just reflecting on how, how nice it is to hear you all who have been in the Postgres community longer and you remember talks from different people like going, going way back and you've worked together in your case Álvaro and Boriss for a very long time.
 
 And it's, it's nice to hear that and it's all part of the community building. So folks that join Postgres, they find a community that's warm and welcoming and supportive. And so I wanted to ask Bo, I think it was bodies have touched on it earlier that during the pandemic conferences, in-person conferences were, were reduced so much and how did it affect the community?
 
