@@ -372,99 +372,92 @@ I'm working with him in the beginning of my career in it was very, very importan
 
 **Boriss:** Oh, 2017.
 
-**Claire:** Oh, really? Okay. Really. I know I, this is a long time ago. I just wanted to give you that shout out as well, like as a Postgres committer, it's not just your job to do development on Postgres and get it integrated, but you spent a lot of time reviewing other people's patches and other people's work, giving them feedback, helping shepherd it through the process.
+**Claire:** Oh, really? Okay. Really? I know... this is a long time ago. I just wanted to give you that shout out as well, like as a Postgres committer, it's not just your job to do development on Postgres and get it integrated, but you spent a lot of time reviewing other people's patches and other people's work, giving them feedback, helping shepherd it through the process and so, you know, we all, we all owe a debt. Thanks for that because, you know, it's not your name on those features, but it wouldn't happen without you. So, yeah.
 
-And so you know, we all, we all owe Aden. Thanks for that because you know, it's not your name on those features but it wouldn't happen without you. So, yeah. Yeah, 
+**Álvaro:** Yeah, been a very lucky ride for me, and I'm very grateful for the all the time that I've given Postgres, and Postgres the opportunities that's working on Postgres has given me.
 
-**Pino:** it's 
+**Pino:** I thought of a question: is it too late for me to open up a quick, it could be quick...
 
-**Boriss:** been a very lucky ride for me, and I'm very grateful for the all the time that I've given Postgres and Postgres, the opportunities that's working on Postgres has 
+**Claire:**: Yeah, go for it: I can run a few minutes over.
 
-**Pino:** given me.
+**Pino:** I was just reflecting on how nice it is to hear all of you who have been in the Postgres community longer, and you remember talks from different people like going way back, and you've worked together, in your case Álvaro and Boriss, for a very long time.
 
-I thought with a question, is it too late for me to open up a quick, it could be quick. Yeah, go for it. I can run a few minutes open. I was, how, I was just reflecting on how nice it is to hear you all who have been in the Postgres community longer and you remember talks from different people like going way back and you've worked together in your case Álvaro and Boriss for a very long time.
+And it's nice to hear that and it's all part of the community building. So, folks that join Postgres, they find a community that's warm and welcoming and supportive. And so I wanted to ask Boriss, I think it was Boriss that touched on it earlier that, during the pandemic, conferences, in-person conferences, were reduced so much, and how did it affect the community? Is it coming back? Or can we do that kind of community building through virtual events and remote events like we're doing now? Yeah, maybe take that in whatever direction in terms of, like, you know, how much do we struggle now? And because presentations are so much part of, and the conferences are so much part of, community building.
 
-And it's nice to hear that and it's all part of the community building. So folks that join Postgres, they find a community that's warm and welcoming and supportive. And so I wanted to ask Bo, I think it was bodies have touched on it earlier that during the pandemic conferences, in-person conferences were reduced so much and how did it affect the community?
+**Boriss:** In the case of the user group in Belgium, it was an opportunity to start doing online conferences because it's always so difficult to find sponsors for doing in-person events and people moving around, because it not like we are one, big city. It's like a small country, so people still have to move a lot to go to meetup. But when we started doing it on a regular basis online, I think it was good for the group.
 
-Is it coming back or, or, or, or can we do that kind of community building through virtual events and remote events like we're doing now? Yeah. Maybe take that. In whatever direction in terms of like, you know, how how much do we struggle now? And because presentations are so much part of, and the conferences are so much part of community building.
+So, but it's not that obvious to engage the people. You need to still give them an opportunity to react back and not just listen and then ask questions to a forum or something like that. So for larger groups, I don't think it's that obvious. I think it is meetups and stuff like that can still benefit and build up a group like that. That's my experience, yep.
 
-**Boriss:** In the case of the user group in Belgium, it was an opportunity to start doing online conferences because it's always so difficult to find sponsors for doing in-person events and people moving around because it not like we are big one, big city. It's like a, a small country, so people still have to move a lot to go to Amita, but when we started doing it on a regular basis online, I think it was good for the group.
+**Claire:** Álvaro, what about you, virtual versus in-person? 
 
-So, but it's not that obvious to engage the people. You need to still give them an opportunity to react back and not just listen and then ask questions to a forum or something like that. So for larger groups, don't think it's that obvious. I think it is. Meetups and stuff like that can still benefit and build up a group like that.
+**Álvaro:** I think an in-person conference has value that an online conference cannot ever have. I mean, a virtual conference of course, is going to have some value. But the ability to network, live, in person with people and not live, I mean... physically it is not replaceable, so.
 
-That's my experience. 
+**Claire:** Okay.
 
-**Claire:** Yep. What about you, virtual versus in person? 
+**Álvaro:** Personally, I've never felt motivated enough to do an online talk.
 
-**Boriss:** I think an in person conference has value that an online conference cannot ever have. I mean, a virtual conference of course, is going to have some value. But the ability to network live in person with people and not live, I mean, physically it is not replaced somewhere, so.
+I was going to stop actually, but then Claire convinced me and forced [me]. That was a good idea. So thank you for that. So that was that was a Citus Con. Now I'm glad that you have still this past two Citus Con and to continue because it means there are going to be other events, Yeah
 
-Okay. Personally, I've never felt motivated enough to do an online talk.
+**Claire:** I guess I'm curious. Like, you haven't wanted to do a virtual conference presentation Álvaro, but Boriss, you just did one, and your recording is going go live and I expect that you will have thousands of views of that recording ultimately, right, if you promote it, if you share it, right? Obviously it all depends. And apparently on YouTube, the first 24 hours matters a lot, right, to the YouTube algorithms. But so what's your take Boriss on, like, is there a place for both when you think about conferences? 
 
-I was going to stop actually, but then Claire convinced me and forced them. That was a good idea. So thank you for that. So that was that was a cytocon. Now I'm glad that you have still this past two cycle and to continue because it means there are going to be other events. Yeah. I think that 
+**Boriss:** Yes. I think it is possible to have both. The thing is that it's difficult to follow because when we go to a conference, we, our colleagues, they know that we are not available.
 
-**Claire:** I guess I'm curious, like you haven't wanted to do a virtual conference presentation El Vado, but Boice, you just did one and your recording is gonna go live, and I expect that you will have thousands of views of that recording ultimately, right.
+But when you do it online, you have to jump from one meeting to the other, and then try to follow one presentation. Sometimes you even have time only to give your own presentation and that's it. Yeah, that's a little bit difficult. In terms of getting time for the conference itself.
 
-If you promote it, if you share it. Right. Obviously it all depends. And apparently on YouTube, the first 24 hours matters a lot, right. To the YouTube algorithms. But so, so what's your take bodies on, like, is there a place for both when you think about conferences? 
+**Claire:** Yeah, I actually find that same problem whenever there's a conference in my area, like when I haven't had to travel to an in-person conference and it's in San Francisco. It's easy to get sucked back into the office. Back, you know, pre-Covid when I had an office, so, okay.
 
-**Boriss:** Yes. My, I think it's, it is possible to have both the thing is that it's difficult is to follow because when we go to a conference, we, our colleagues, they know that we are not available.
+**Álvaro:** I think room for both, but the online presentation should be limited to half an hour. I think one hour is difficult to watch recordings. That's a good point.
 
-But when you do it online, you have to jump from one meeting to the other and then try to follow one presentation. Sometimes you even have time only to give your own presentation and that's it. Yeah, that's a little bit difficult. In terms of getting time for the conference itself 
+**Borris:** Yeah, I think that's a good point.
 
-**Claire:** yeah, I actually find that same problem whenever there's a conference in my area, like when I haven't had to travel to an in-person conference and it's in San Francisco.
+**Claire:** Yeah, I think that's fair. Okay, one last question before we leave today: do you remember the first Postgres conference talk you gave? I'm just curious. Boriss?
 
-It's easy to get sucked back into the office. Back, you know, pre covid when I had an office, so, okay. 
+**Boriss:** I don't think... I remember the first talk that I gave in the Prostgres community, which was a lightning talk in Tallinn. That was fun. But the first Postgres question (?), probably I give it in the RESCO (?) community, I don't remember.
 
-**Boriss:** I think room for both, but the live presenta, the online presentation should be limited to half an hour. I think one hour is difficult to watch recordings. That's a good point. Yeah, I think 
+But my first very first talk, it was in 1999. That one I remember it really, really well. It was with Felipe Hoffa, another friend of ours. Yes.
 
-**Pino:** that's, that's a good point.
+**Claire:** Also, lightning talks are a really good way to get started. Yes, 
 
-**Claire:** Yeah, I think that's fair. Okay. One last question before we leave today. Do you remember the first Postgres conference talk you gave? I'm just curious. Bodies. 
+**Álvaro:** Yeah. But lightning talks have the problem that you have to be extremely funny or something. Because it is so easy to get next to somebody who was really funny and then present some something boring that is... hmm. 
 
-**Boriss:** I don't think I gave the, I remember the first talk that I gave in the post risk community, which was a liking talk in t That was fun. But the first post question, probably I give it in the RESCO community, I don't remember.
+**Claire:** Yeah, I hear you.
 
-But my first very first talk, it was in 1999. That one I remember it really, really well. It was with Philippe Hoffa, another friend of us. Yes. Yeah. Okay. 
+**Álvaro:** Anyway, I was going to say, my first Postgres talk was in year 2000. At the Linux event in Chile: [unknown], the second one. And my first international Postgres conference was in Mexico in 2004.
 
-**Claire:** Also should Lightning Talks are a really good way to get started. Yes, 
+**Pino:** Wow.
 
-**Boriss:** I think. Yeah. But lightning talks have the problem that you have to be extremely funny or something.
+**Álvaro:** Yeah.
 
-Cause it is so easy to get next to somebody who was really funny and then present some something boring that is 
+**Claire:** All right, so you've been teaching people about Postgres for a while.
 
-**Pino:** yeah. Anyway. I hear you. 
+**Álvaro:** Oh, yes.
 
-**Boriss:** Anyway. I was going to say, my first posts talk was in year 2000. At the event at the Linux event in Chile and Linux, the second one. And my first International Postgres conference was in Mexico in 2004.
+**Claire:** Fair to say. All right. Well, Álvaro and Boriss, thank you on behalf of both Pino and myself for joining us today and exploring this. I think that, you know, I guess my question to you, going back to the first topic or the first question of the day, why giving talks at Postgres conferences matters is: would you encourage people who have never given a Postgres talk, whether it's a user talk or developer talk at a Postgres conference, would you encourage them to submit? Should they do it? Is it worth it?
 
-Wow. Yeah. 
+**Boriss:** Absolutely. Coming from an introvert and an extrovert, both, we say immediately. Absolutely. Yeah. 
 
-**Pino:** Yeah. 
+**Claire:** Even if it's a little bit scary?
 
-**Claire:** All right. So you've been teaching people about Postgres for a while. Oh, yes. Fair to say. All right. Well, RO and Boiz, thank you on behalf of both Pino and myself for joining us today and exploring this. I think that, you know, I guess my question to you, going back to the first topic or the first question of the day, why giving talks at Postgres conferences matters is would you encourage people who have never given a Postgres talk, whether it's a user talk or developer talk at a Postgres conference, would you encourage them to submit?
+**Álvaro:** So, definitely intimidating as an introvert, [but] I can say that it is definitely worth overcoming the fear and doing it.
 
-Should they do it? Absolutely. 
+**Boriss:** It is a challenge. And it is difficult, but the benefit is enormous.
 
-**Boriss:** Is it worth it? Yeah, absolutely. Yeah. Coming from an introvert and an extrovert, both, we say immediately. Absolutely. Yeah. 
+**Pino:** Sorry, but just quickly: can new presenters get help from from the community?
 
-**Claire:** Even if it's a little bit scary. So as, as 
+**Álvaro:** If you want to give a talk and then you don't know how to, I offer my help. I mean, contact me. I can, I help all the peoples already.
 
-**Boriss:** definitely intimidating as an introvert, I can say that it is definitely worth overcoming the fear and doing it.
+But we don't have any... we should have a group kind of, like, [to] help speakers. Would that be something? Right? Why not? "Coaches talk", I don't know. I mean, that sounds a little bit pretentious, but if somebody wants some feedback, I can always help.
 
-It is a challenge. It is difficult, but the benefit is enormous. Can you, in my 
+**Boriss:** I'm open to doing that.
 
-**Pino:** case, sorry, but just quickly, can new presenters get help from, from the community? Can from help 
+**Claire:** A lot of times members of the talk selection committee sometimes are willing to answer questions as well, and give feedback before people even submit their CFP proposals.
 
-**Boriss:** if, if you want to give a talk and then you don't know how to, I offer my help. I mean, contact me. I can, I help all the peoples already.
+So, I don't know if everybody does that. I know I have done that and I know other folks have as well. Because, you know, there are some basic tactics in terms of your CFP submission. Like, filling in the additional information section with, you know, your experience and what you're going to do to prepare and practice, particularly if you're a first time speaker. Like there are things you can do to make your submission stronger and to make it more likely to be accepted.
 
-But we don't have any, we, we should have a group kind of like help speakers. Would that be something? Right? Why not? Coaches talk. I don't know. I mean that sounds a little bit pretentious, but if somebody wants some feedback, I can always help. I'm open to to doing that. A lot 
+So I think there's lots of help out there. You just have to ask for it. All right. Boriss, Álvaro: Thank you so much for joining us today, episode three. This episode has been recorded and it will be published on YouTube initially. We'll drop the link in the thread and then it will also probably ultimately be published on other podcast platforms too.
 
-**Claire:** of, a lot of times members of the talk selection committee sometimes are willing to answer questions as well and give feedback before people even submit their C F P proposals.
+**Boriss:** So thanks for the invitation. It's been really a pleasure.
 
-So I don't know if everybody does that. I know I have done that and I know other folks have as well. Because, you know, there are some basic tactics in terms of your C F P submission, like filling in the additional information section with, you know, your experience and what you're gonna do to prepare and practice, particularly if you're a first time speaker, like there are things you can do to make your submission stronger and to make it more likely to be accepted.
+**Álvaro:** Yeah. Thank you, Claire, thank you Pino. High five, Boriss.
 
-So I think there's lots of help out there. You just have to ask for it. All right, bud. Thank you so much for joining us today. Episode three. This episode has been recorded and it will be published on YouTube initially. Will drop the link in the thread and then it will also probably ultimately be published on other podcast platforms too.
-
-**Boriss:** So thanks for the invitation. It's been really a pleasure. Yeah. Thank you, Claire. Thank you. Pinot High five boys. Thank you both so much. 
-
-**Claire:** Yes. Yeah. Virtual high five here. Yeah. All right, and thanks to everybody on the chat as well,
-
-cia.
-
+**Claire:** Yes, yeah: virtual high five here. Yeah. All right, and thanks to everybody on the chat as well. Ciao, ciao.
